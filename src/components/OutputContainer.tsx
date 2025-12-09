@@ -71,7 +71,7 @@ function OutputContainer({
           </div>
         </div>
       ) : (
-        <div className="h-auto flex flex-wrap items-center justify-center ">
+        <div className="h-auto flex flex-wrap items-center justify-center">
           {text.split("").map((letter, idx) => (
             <div key={idx}>
               {letter !== " " && letterImages[letter] ? (

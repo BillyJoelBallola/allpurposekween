@@ -12,7 +12,9 @@ function App() {
   });
 
   function handleTextChange(text: string) {
-    if (text.split("")[0] === " " || text.split("").length === 15) return;
+    const MAX_LENGTH = 20;
+    if (text.split("")[0] === " " || text.split("").length === MAX_LENGTH)
+      return;
     setText(text);
   }
 
